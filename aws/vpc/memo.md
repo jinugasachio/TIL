@@ -10,7 +10,6 @@
 ※ AWSアカウントとVPC分割パターンはITオペレーションモデルに沿ったものが必要、そこをよく考えるべし。
 
 <br>
-<br>
 
 ## NAT ゲートウェイ
 
@@ -35,8 +34,6 @@
 
 <img src="https://docs.aws.amazon.com/ja_jp/vpc/latest/userguide/images/nat-gateway-diagram.png">  
 
-<br>
-<br>
 <br>
 
 ## 良い感じの資料
