@@ -36,12 +36,16 @@
 
 <br>
 
+## セキュリティグループ
+- VPC内に作成できる。VPCの管理化というイメージで良いかも。
+- そしてそのVPC内のどのリソースに紐づけるかを設定できる。
+  - 例：AというVPC内に、BとCというセキュリティグループがある。
+  - BはA内のALBに設定、CはA内のEC2に設定。みたいな。 
+
 ## 良い感じの資料
-### 読み物
 - [AWS Amazon VPC ユーザーガイド](https://docs.aws.amazon.com/ja_jp/vpc/latest/userguide/what-is-amazon-vpc.html)
-### 動画
-- [【AWS Black Belt Online Seminar】Amazon VPC 2019](https://youtu.be/aHEVvsk6pkI)
-- [【AWS Black Belt Online Seminar】Amazon VPC 2020](https://youtu.be/JAzsGRS_o4c)
-- [【AWS Black Belt Online Seminar】 Amazon VPC Advanced](https://youtu.be/WCq_2-zkV44)
+- [AWS Black Belt Online Seminar Amazon VPC 2019](https://youtu.be/aHEVvsk6pkI)
+- [AWS Black Belt Online Seminar Amazon VPC 2020](https://youtu.be/JAzsGRS_o4c)
+- [AWS Black Belt Online Seminar Amazon VPC Advanced](https://youtu.be/WCq_2-zkV44)
 
 
