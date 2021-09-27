@@ -33,6 +33,12 @@
 - ターゲットとなるEC2インスタンスのセキュリティグループはELBのセキュリティグループからのトラフィックのみを許可するように設定する。
 - SSL/TLS Terminationを使って、`ユーザー → LB`はhttpsで通信、`LB → インスタンス`はhttpで通信。 これによりインスタンスの負荷をオフロードできる。（ALBとCLBのみ？）
 
+## アクセスログ
+- アクセスログ設定を有効化。
+- 専用のS3バケットを作成する。（SSE-S3 を使用して自動的に暗号化される）
+- 対象ELBにバケットポリシーを付与。
+  - `principal` でELBのアカウントIDを指定する必要がある。リージョン毎に異なるので注意。（[参考](https://docs.aws.amazon.com/ja_jp/elasticloadbalancing/latest/application/load-balancer-access-logs.html#access-logging-bucket-permissions)）
+  
 ## 良い感じの資料
 - [AWS Elastic Load Balancing](https://docs.aws.amazon.com/ja_jp/elasticloadbalancing/latest/userguide/what-is-load-balancing.html)
   - [Application Load Balancer](https://docs.aws.amazon.com/ja_jp/elasticloadbalancing/latest/application/introduction.html)
