@@ -1,17 +1,33 @@
 # Kubernetes
 ## 構成
+### クラスター
+- k8sシステムを構成するサーバー群。（マスターノード + ワーカーノード）
 ### マスターノード
 - kube-apiserver
+  - 外部とやりとりするプロセス。
+  - kubectlの指示の先はこのお方。
 - etcd
+  - クラスターの情報を全て管理しているKVS。
 - kube-controller-manager
+  - k8sオブジェクトを処理するコントローラというコンポーネントを統括管理・実行する。
 - kube-scheduler
+  - Podをワーカーノードへと割り当てる処理をする。
 - clound-controller-manager
+  - k8sを運用する各クラウドサービスと連携し、クラウド上で必要となるモノ（サービス）を作る。
 ### ワーカーノード
 - kube-let
+  - kube-schedulerと連携し、ワーカーノード上にPodを配置し、Pod内のコンテナを実行する。
+  - Podの状態の監視も行い、kube-schedulerに通知もする。
 - kebe-proxy
+  - ネットワーク通信をルーティングする。
 
 ## オブジェクト
 ### Pod
 ### Service
 ### ReplicaSet
 ### Deployment
+### StatefulSet
+### Job
+### CronJob
+### Daemonset
+### Ingress
