@@ -19,6 +19,7 @@
 - クロスゾーン負荷分散がデフォルトで有効。
 - スティッキーセッションが利用可、デフォルトでは無効。
   - アプリのセッション情報、一時ファイルなどをインスタンスが保持する構成の場合に必要。→ DBサーバーやキャッシュに持たせるのが一般的なのでこの構成自体は好ましくない。ルールを設定可能。
+- HTTPSリスナー設定時のセキュリティーポリシーは`ELBSecurityPolicy-2016-08`がデフォルト & 推奨（[参考](https://docs.aws.amazon.com/ja_jp/elasticloadbalancing/latest/application/create-https-listener.html)）
 ## NLB
 - セキュリティグループ指定できない。
 - クロスゾーン負荷分散がデフォルトで無効。
