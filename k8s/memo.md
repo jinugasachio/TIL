@@ -50,6 +50,7 @@
 - ReplicaSetを管理し、Podのバージョンアップなどのデプロイを行う。
 ### StatefulSet
 ### Job
+- バッチ処理などのワンショットの起動に使われるオブジェクト。処理が終わったら削除される。
 ### CronJob
 ### Daemonset
 ### Ingress
