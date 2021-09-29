@@ -40,14 +40,16 @@
   - Cluster IPを設定しないService。
   - 直にPodと通信する。
 ### ReplicaSet
+- 同じ構成のPodを指定した数だけ管理する。
 ### Deployment
+- ReplicaSetを管理し、Podのバージョンアップなどのデプロイを行う。
 ### StatefulSet
 ### Job
 ### CronJob
 ### Daemonset
 ### Ingress
+### Namespace
 
 ## その他の概念
 ### ラベル
 ### セレクター
-### ネームスペース
