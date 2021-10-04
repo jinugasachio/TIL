@@ -31,3 +31,11 @@
 - よって、親のvalueを参照することはできない
 - 親チャートはサブチャートの値を上書きできる
 - 全てのチャートから参照できるものを`global values`としている
+
+## デバック tips
+- `helm lint`
+  - チャートがベストプラクティスに沿っているかわかる
+- `helm install --dry-run --debug` or `helm template --debug`
+  - チャートをマニフェストファイルとして出力してくれる
+- `helm get manifest`
+  - k8sのサーバーに既にインストール済みかどうかわかる
