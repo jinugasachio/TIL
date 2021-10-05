@@ -9,6 +9,8 @@
 - プラグインキャッシュを有効にする
 - TFLintで不正なコードを検出する
 - Stateをリモートで管理
+  - StateバケットはTerraformで管理してはいけない
+  - 別のAWSアカウントのバケットを利用することがベストプラクティス
 
 ## 良い感じの資料
 - [「それ、どこに出しても恥ずかしくないTerraformコードになってるか？」](https://speakerdeck.com/yuukiyo/terraform-aws-best-practices)
