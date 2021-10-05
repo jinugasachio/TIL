@@ -11,6 +11,7 @@
 - Stateをリモートで管理
   - StateバケットはTerraformで管理してはいけない
   - 別のAWSアカウントのバケットを利用することがベストプラクティス
+- 複数環境（prod, staging etc）がある場合は環境毎に独立したStateファイルで管理する
 
 ## 良い感じの資料
 - [「それ、どこに出しても恥ずかしくないTerraformコードになってるか？」](https://speakerdeck.com/yuukiyo/terraform-aws-best-practices)
