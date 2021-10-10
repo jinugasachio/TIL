@@ -1,0 +1,4 @@
+# Kubernetes Tips
+- Podに割り振られた仮想IPアドレスはそのPodに所属するすべてのコンテナと共有される
+- ReplicaSetを直接扱わずにDeploymentのマニフェストファイルを扱う運用にすることがほとんど
+- PodのラベルがServiceにセレクタで定義しているラベルと合致した場合、対象のPodはそのServiceのターゲットになる
