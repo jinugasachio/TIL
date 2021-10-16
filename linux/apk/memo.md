@@ -4,6 +4,7 @@
 
 - [公式wiki](https://wiki.alpinelinux.org/wiki/Alpine_Linux_package_management)
 
+## コマンド
 - `apk update`
   - ローカルにあるapkのインデックスキャッシュ（`/var/cache/apk`）を更新
   - パッケージ検索やインストールは上記のインデックスの情報をもとに行われる
