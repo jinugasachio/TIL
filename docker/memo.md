@@ -46,6 +46,13 @@ from  [Dockerfileのベストプラクティス Top 20](https://sysdig.jp/blog/d
 - `docker image history`
   - 各レイヤーの命令とファイルサイズを確認できる、軽量化作業には必須
 
+- `-it`
+  - コンテナを端末から操作するためのオプション、慣例句のように使われる
+  - `-i` オプション
+    - コンテナへの標準入出力及びエラー出力を可能にする
+  - `-t` オプション
+    - カーソル、エスケープキー、コントロールキーなどで操作を可能にする
+
 ## Tips
 - `apt-get`を実行する場合、ダウンロード元を日本のサーバーにするとbuildの節約時間を減らすことができる場合がある（[参考](https://genzouw.com/entry/2019/09/04/085135/1718/)）
 
@@ -55,3 +62,8 @@ from  [Dockerfileのベストプラクティス Top 20](https://sysdig.jp/blog/d
 
 - [Docker Bench for Security](https://github.com/docker/docker-bench-security)
   - Dockerを本番で実行・運用する上で行うべきベストプラクティスをチェックするためのツール
+
+- alpineのdockerコンテナにはデフォルトで `bash` がないので `sh`で入る
+  - ```
+    $ docker exec -it {CONTAINER} sh
+    ```
