@@ -5,5 +5,5 @@
 - コンストラクタにおけるメモ化( `||=` ) はほとんどの場合不要である from [参考](https://techracho.bpsinc.jp/hachi8833/2020_06_25/74938)
 
 
-## 良記事
+## 良い感じの資料
 - [Rails開発におけるwebサーバーとアプリケーションサーバーの違い](https://qiita.com/jnchito/items/3884f9a2ccc057f8f3a3)
