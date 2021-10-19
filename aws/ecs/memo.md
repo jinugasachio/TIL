@@ -35,6 +35,9 @@
   - タスク（＝コンテナ）で使用されるロール
 ## ベストプラクティス
 - クラスターにデフォルトのキャパシティープロバイダー戦略を定義する。
+
+## Tips
+- 同一のタスク定義にあるコンテナは、localhostで通信できる
 ## 良い感じの資料
 
 - [Amazon Elastic Container Service ドキュメント](https://docs.aws.amazon.com/ja_jp/ecs/index.html)
