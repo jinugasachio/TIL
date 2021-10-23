@@ -30,3 +30,20 @@
 
 - `apk del`
   - パッケージをアンインストール
+
+- `adduser`
+    ```
+    Usage: adduser [OPTIONS] USER [GROUP]
+  
+    Create new user, or add USER to GROUP
+  
+          -h DIR          Home directory
+          -g GECOS        GECOS field
+          -s SHELL        Login shell
+          -G GRP          Group
+          -S              Create a system user
+          -D              Don't assign a password
+          -H              Don't create home directory
+          -u UID          User id
+          -k SKEL         Skeleton directory (/etc/skel)
+    ```
