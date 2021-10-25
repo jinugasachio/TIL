@@ -72,6 +72,7 @@
 
 ## Tips
 - 同一のタスク定義にあるコンテナは、localhostで通信できる
+- コンテナ開発のセキュリティベストプラクティス - [NIST SP800-190](https://www.ipa.go.jp/files/000085279.pdf)
 ## 良い感じの資料
 
 - [Amazon Elastic Container Service ドキュメント](https://docs.aws.amazon.com/ja_jp/ecs/index.html)
