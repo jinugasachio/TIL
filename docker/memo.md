@@ -67,3 +67,5 @@ from  [Dockerfileのベストプラクティス Top 20](https://sysdig.jp/blog/d
   - ```
     $ docker exec -it {CONTAINER} sh
     ```
+
+- [Docker 17.09 からADD/COPY --chownでファイルのオーナーを変更できるようになった](https://qiita.com/minamijoyo/items/c599e81f8803e690f3e1)
