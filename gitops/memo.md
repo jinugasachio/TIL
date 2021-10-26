@@ -9,6 +9,4 @@
 
 
 
-from  [GitOpsとは](https://aws.amazon.com/jp/solutions/implementations/aws-perspective/)
-
-## 実践
+from  [GitOpsとは](https://www.redhat.com/ja/topics/devops/what-is-gitops)
