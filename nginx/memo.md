@@ -50,6 +50,11 @@ http {
 }
 ```
 
+## 設定ファイルのチェック
+- `nginx -t`
+  - デフォルトで `/usr/local/etc/nginx/nginx.conf` を参照するので注意
+  - 参照先を変えたい場合は、`nginx -t -c /path/to/nginx.conf`
+
 
 ## 良い感じの資料
 - [ApacheとNginxの違い](https://openstandia.jp/pdf/140228_osc_seminar_ssof8.pdf)
