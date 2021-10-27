@@ -1,5 +1,5 @@
 # Passenger
-- `Passengerfile.json` はルート直下に置く - [参考](https://www.phusionpassenger.com/library/config/standalone/intro.html#location-of-passengerfile-json)
+- `Passengerfile.json` はルート直下に置く  [参考](https://www.phusionpassenger.com/library/config/standalone/intro.html#location-of-passengerfile-json)
   
 - `--nginx-config-template`
   - nginxの設定ファイルを指定できる
@@ -7,7 +7,7 @@
     ```
     $ passenger start --nginx-config-template nginx.conf.erb
     ```
-  - めんどい時は`Passengerfile.json` で指定しておけば良い - [参考](https://www.phusionpassenger.com/library/config/standalone/reference/#--nginx-config-template-nginx_config_template)
+  - めんどい時は`Passengerfile.json` で指定しておけば良い  [参考](https://www.phusionpassenger.com/library/config/standalone/reference/#--nginx-config-template-nginx_config_template)
 
 - `--debug-nginx-config`
   - nginxの設定ファイルを実際に出力してくれる
