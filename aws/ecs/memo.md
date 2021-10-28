@@ -69,10 +69,11 @@
 
 ## ベストプラクティス
 - クラスターにデフォルトのキャパシティープロバイダー戦略を定義する。
+- コンテナ実行環境はプライベートサブネット
 
 ## Tips
 - 同一のタスク定義にあるコンテナは、localhostで通信できる
-- コンテナ開発のセキュリティベストプラクティス - [NIST SP800-190](https://www.ipa.go.jp/files/000085279.pdf)
+
 ## 良い感じの資料
 
 - [Amazon Elastic Container Service ドキュメント](https://docs.aws.amazon.com/ja_jp/ecs/index.html)
@@ -82,3 +83,5 @@
 - [AWS Black Belt Online Seminar CON207 Auto Scaling in ECS 後編](https://youtu.be/45uuyy16RS4)
 - [AWS Black Belt Online Seminar CON202 ECS Fargate入門](https://youtu.be/5fXwkTgWrjw)
 - [AWS Black Belt Online Seminar AWS Fargate](https://youtu.be/rwwOoFBq2AU)
+- [NIST SP800-190](https://www.ipa.go.jp/files/000085279.pdf)
+- [Container Security](https://www.slideshare.net/AmazonWebServicesJapan/20191125-container-security)
