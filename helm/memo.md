@@ -51,3 +51,22 @@ helm（chartを管理） → chart（manifest fileのテンプレートの集合
   - チャートをマニフェストファイルとして出力してくれる
 - `helm get manifest`
   - k8sのサーバーに既にインストール済みかどうかわかる
+
+## helm-secrets
+- helm-secretsはhelmで[Secrets](https://kubernetes.io/docs/concepts/configuration/secret/)を扱いやすくするためのwrapper
+- インストール
+  - ```
+    $ helm plugin install https://github.com/futuresimple/helm-secrets
+    ```
+- 暗号化する
+  - `secrets.yaml` に暗号化したい値を記載
+  - `.sops.yaml` に鍵を指定
+  - ```
+    $ helm secrets enc path/to/secrets.yaml
+    ```
+  - 詳細はググって！
+
+- 複合化する
+  - ```
+    $ helm secrets view helm_vars/dev/secrets.yaml
+    ```
