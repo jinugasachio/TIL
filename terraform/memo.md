@@ -26,3 +26,5 @@
 ## 良い感じの資料
 - [「それ、どこに出しても恥ずかしくないTerraformコードになってるか？」](https://speakerdeck.com/yuukiyo/terraform-aws-best-practices)
 - [TerraformかCloudFormationか？失敗例コミでIaCを語る！GUIからの卒業](https://youtu.be/SzrEG5BjnLM)
+- [Terraform職人入門: 日々の運用で学んだ知見を淡々とまとめる](https://qiita.com/minamijoyo/items/1f57c62bed781ab8f4d7)
+- [Terraform職人再入門2020](https://qiita.com/minamijoyo/items/3a7467f70d145ac03324)
