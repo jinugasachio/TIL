@@ -17,3 +17,31 @@
   - 役割は .zprofile とほぼ一緒。混乱を避けるため併用しないこと
 - .zlogout
   - exit コマンドで zsh を抜けたときに読み込まれる
+
+- ```shell
+  function my_function() {
+    BUFFER="${BUFFER}xyz"
+    CURSOR+=1
+    zle redisplay
+  }
+  zle -N my_edit_func
+  bindkey "^j" my_edit_func
+  ```
+  - `BUFFER`
+    - コマンドラインとして編集している文字列が格納される変数
+    - この変数に任意の文字列を入れると、実際にコマンドラインの文字列も置き換わる
+  - `CURSOR`
+    - カーソルがある位置が格納される変数
+    - この変数に数値を入れると、実際にコマンドラインのカーソル位置が移動する
+  - `zle redisplay`
+    - 画面のリフレッシュ
+    - 簡単な編集なら不要だが、つけておくと無難
+  - `zle -N my_function`
+    - my_functionをZLEウィジェットというものとして登録する
+    - おまじない的に必ずつけるものだと思えば良い
+  - `bindkey "^j" my_function`
+    - ctrl+jにウィジェットmy_functionを紐づける
+
+- ^a で行頭に移動
+- ^e で行末に移動
+- ^w で1ブロック削除
