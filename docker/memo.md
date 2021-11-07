@@ -78,5 +78,8 @@ from  [Dockerfileのベストプラクティス Top 20](https://sysdig.jp/blog/d
 - [dockle](https://github.com/goodwithtech/dockle)
   - コンテナベストプラクティスチェックツール
   - CIS BenchmarksにおけるDocker関連の項目やDockerベストプラクティスに基づいたチェックができる
+  
+- [dockerdot](https://github.com/po3rin/dockerdot)
+  - レイヤーの依存関係がわかる 
 
 - [Docker 17.09 からADD/COPY --chownでファイルのオーナーを変更できるようになった](https://qiita.com/minamijoyo/items/c599e81f8803e690f3e1)
