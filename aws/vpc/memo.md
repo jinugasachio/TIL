@@ -47,6 +47,10 @@
 - トラフィックソースには別のセキュリティグループを設定することができる。
   - 例：ALBからプライベートなEC2へのトラフィックを許可する際にはEC2のセキュリティグループのインバウンドソースにALBのセキュリティグループを設定する。
 
+## Tips
+- マルチAZは2AZではなく３AZにすべき
+  - [なぜ「AWS で負荷分散は３AZ にまたがるのがベストプラクティス」と言われるのか 可用性の面から考えてみた](https://dev.classmethod.jp/articles/202008-three-az-load-balancing/) 
+
 ## 良い感じの資料
 - [AWS Amazon VPC ユーザーガイド](https://docs.aws.amazon.com/ja_jp/vpc/latest/userguide/what-is-amazon-vpc.html)
 - [AWS Black Belt Online Seminar Amazon VPC 2019](https://youtu.be/aHEVvsk6pkI)
