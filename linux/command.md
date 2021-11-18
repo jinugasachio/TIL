@@ -13,3 +13,14 @@
       nginx-1.2 15124 ugajin-yukio    6u  IPv4 0x8ca70489ab55b365      0t0  TCP *:10254 (LISTEN)
       nginx-1.2 15125 ugajin-yukio    6u  IPv4 0x8ca70489ab55b365      0t0  TCP *:10254 (LISTEN)
     ```
+
+- `test`
+  - ファイルの形式のチェックや値の比較を行う
+    - ```
+      test -d file
+      ````
+      - file がディレクトリならば真となる
+  - よく見かける `if [ -d "$hoge" ]; then` の `[]` は`test`の略式
+  - オプションたくさんある
+    - https://linuxjm.osdn.jp/html/GNU_sh-utils/man1/test.1.html
+    - https://shellscript.sunone.me/if_and_test.html
