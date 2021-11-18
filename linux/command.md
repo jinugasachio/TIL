@@ -24,3 +24,7 @@
   - オプションたくさんある
     - https://linuxjm.osdn.jp/html/GNU_sh-utils/man1/test.1.html
     - https://shellscript.sunone.me/if_and_test.html
+
+- `uniq`
+  - 重複している行を取り除く
+  - 元のテキストが“並べ替え済み”であることが前提になるので、必要に応じて先に`sort`コマンドで並べ替えを実行することが多い
