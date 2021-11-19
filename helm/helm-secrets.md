@@ -1,5 +1,5 @@
 # [Helm Secrets](https://github.com/jkroepke/helm-secrets)
-### secretsの追加方法
+## secretsの追加方法
 ※ もちろん公式にも書いてあるんだけどfreeeのリポジトリだとうまくいかなかったのでそれ用のメモ
 
 1. 複合する
