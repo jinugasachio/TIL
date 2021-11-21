@@ -31,11 +31,20 @@
 
 
 ## 用語
+- ビューワー
+  - クライアント/Webブラウザ
+- オリジン
+  - コンテンツを提供する大元のサーバー
+    - s3かその他webサーバー（カスタムオリジン）を指す  
 - リージョナルエッジキャッシュ
   - エッジロケーションとオリジンの間にもう一段キャッシュサーバ郡を組み込んだもの（[参考](https://dev.classmethod.jp/articles/cloudfront-regional-edge-cache/)）
-  - [CloudFront とリージョン別エッジキャッシュとの連携](https://docs.aws.amazon.com/ja_jp/AmazonCloudFront/latest/DeveloperGuide/HowCloudFrontWorks.html#CloudFrontRegionaledgecaches) 
+  - [CloudFront とリージョン別エッジキャッシュとの連携](https://docs.aws.amazon.com/ja_jp/AmazonCloudFront/latest/DeveloperGuide/HowCloudFrontWorks.html#CloudFrontRegionaledgecaches)  
 - ディストリビューション
   - ドメイン毎に割り当てられるCloudFrontの設定
+  - CloudFrontドメインや代替えドメイン毎に作成
+- ビヘイビア
+  - キャッシュ動作設定
+  - URLパスパターン毎に作成  
 
 ## 資料
 - [Amazon CloudFront ドキュメント](https://docs.aws.amazon.com/ja_jp/cloudfront/index.html)
