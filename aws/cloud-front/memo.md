@@ -12,6 +12,23 @@
 ## コンテンツ配信設定の流れ
 ![スクリーンショット 2021-11-21 19 22 45（2）](https://user-images.githubusercontent.com/49634472/142758150-d32dbd34-960b-4d7b-8dd9-09ec7e91e91f.png)
 
+## オリジンサーバーの保護
+- s3の場合
+  - Origin Access Identity(OAI)を利用
+    - バケットへのアクセスをCloudFrontからのみに制限
+- カスタムオリジンの場合
+  - オリジンカスタムヘッダーを利用し、CloudFront側で指定された任意のヘッダーをオリジン側でチェック
+    - ALBのホストヘッダーのルーティングルールでチェック可能
+
+## AWS WAF 連携
+![スクリーンショット 2021-11-21 21 18 54（2）](https://user-images.githubusercontent.com/49634472/142761473-d6a229a2-f19a-418f-b1ed-5e186eb00b86.png)
+
+## AWS ShieldによるDDos攻撃対策
+- DDos攻撃を緩和するサービスデフォルトで有効になっており無料で利用できる
+
+## ログ & レポート
+![スクリーンショット 2021-11-21 21 32 51（2）](https://user-images.githubusercontent.com/49634472/142761983-1f975e18-8d89-4343-8af7-f5187aac7056.png)
+
 
 ## 用語
 - リージョナルエッジキャッシュ
