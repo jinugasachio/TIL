@@ -1,4 +1,9 @@
 # WAF
+## 機能
+- 悪意あるリクエストのブロック
+- カスタムルールに基づいたWebトラフィックのフィルタ
+- モニタリングとチューニング
+
 ## WAFの守備範囲
 #### HTTP floods
   - 多数の端末やBotを使い、ターゲットのWebサーバに正当に見えるHTTP GETまたはPOSTリクエストを大量に実行する攻撃
@@ -18,4 +23,5 @@
   - ログイン情報を狙った攻撃
   - ユーザーが他サイトのログイン状態を保持したまま悪意を持つ攻撃者が作成したページなどにアクセスしてしまうと、情報やリクエストを勝手に送信されてしまう
 ## 資料
+- [AWS WAF](https://docs.aws.amazon.com/ja_jp/waf/latest/developerguide/waf-chapter.html)
 - [【AWS Black Belt Online Seminar】AWS WAF アップデート](https://youtu.be/4KbCJAjiA3A)
