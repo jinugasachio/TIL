@@ -39,7 +39,10 @@
 - 専用のS3バケットを作成する。（SSE-S3 を使用して自動的に暗号化される）
 - 対象ELBにバケットポリシーを付与。
   - `principal` でELBのアカウントIDを指定する必要がある。リージョン毎に異なるので注意。（[参考](https://docs.aws.amazon.com/ja_jp/elasticloadbalancing/latest/application/load-balancer-access-logs.html#access-logging-bucket-permissions)）
-  
+
+## Tips
+- 複数AZ（＝サブネット）にまたがる場合、論理的には1つのLBがプロビジョニングされているが実体は各AZ（＝サブネット）毎に配置されている。ENIがLB分だけに作成されているのがコンソールから分かる。（[参考](https://dev.classmethod.jp/articles/purge-resources-specific-az/)）
+
 ## 良い感じの資料
 - [AWS Elastic Load Balancing](https://docs.aws.amazon.com/ja_jp/elasticloadbalancing/latest/userguide/what-is-load-balancing.html)
   - [Application Load Balancer](https://docs.aws.amazon.com/ja_jp/elasticloadbalancing/latest/application/introduction.html)
