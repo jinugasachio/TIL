@@ -4,7 +4,6 @@
 
 ## ローカルでビルドする
 - [AWS CodeBuild エージェントを使用してビルドをローカルで実行](https://docs.aws.amazon.com/ja_jp/codebuild/latest/userguide/use-codebuild-agent.html)
-- [CodeBuild Local で CodeBuild の処理をローカル実行](https://dev.classmethod.jp/articles/codebuild-local/)
 
 ## Session Managerでビルド環境へアクセスする
 - buildspec.yml に `codebuild-breakpoint` を埋め込み、ビルド設定でセッション接続を有効化
