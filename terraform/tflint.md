@@ -6,5 +6,6 @@ For example, if the IAM profile references something that doesn't exist, terrafo
   - 実際にAPI叩いた上で解析してくれる
   - ので、クレデンシャルは渡す必要がある
   - [参考](https://github.com/terraform-linters/tflint-ruleset-aws/blob/master/docs/deep_checking.md)
+  - [動作イメージ](https://qiita.com/chaspy/items/00f390b34ae5a9e67390)
 ## 資料
 - [TfLint](https://github.com/terraform-linters/tflint)
