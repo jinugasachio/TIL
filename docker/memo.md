@@ -70,6 +70,10 @@ from  [Dockerfileのベストプラクティス Top 20](https://sysdig.jp/blog/d
 
 - コンテナ開発のセキュリティベストプラクティス - [NIST SP800-190](https://www.ipa.go.jp/files/000085279.pdf)
 
+- `ENTRYPOINT` と `CMD`
+  - `ENTRYPOINT` と `CMD` の両方が書いてある場合には、`CMD` に書かれている内容が、`ENTRYPOINT` に書いてある command のオプションとして実行されます。
+  - `docker run` 時に引数をつけた場合、`CMD` の内容が上書きされ `ENTRYPOINT` に書いてあるcommand が実行されます。
+
 ## 関連ツール
 - [Trivy](https://github.com/aquasecurity/trivy)
   - オススメのコンテナスキャン
