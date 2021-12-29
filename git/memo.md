@@ -8,11 +8,19 @@
 
 ### curl で API叩く
 ```
-# 例
+# PRにコメントする
 $ curl \
   -X POST \
   -H "Accept: application/vnd.github.v3+json" \
   -u jinugasachio:$token \
   https://api.github.com/repos/jinugasachio/terraform-workspace-type/issues/11/comments \
   -d '{"body":"API直接叩いたよ"}'
+
+# PRにラベルつける
+$ curl \
+  -X POST \
+  -H "Accept: application/vnd.github.v3+json" \
+  -u jinugasachio:$token \
+  https://api.github.com/repos/jinugasachio/terraform-workspace-type/issues/11/labels \
+  -d '[{"name":"bug"}]' \
 ```
