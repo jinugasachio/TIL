@@ -38,5 +38,9 @@
 - デフォは16。これはそこそこ妥当らしい。
 - ちなみにMRIの場合はIOだけ並列化可能。これはだいたい総時間の10~25%程度らしい
 
+## tips
+- MRIのGILによりRubyのコードを一度に実行できるのは1スレッドだけ
 ## 資料
 - [Railsのアプリケーションサーバーのプロセス数とスレッド数の設定方法](https://tech-book.precena.co.jp/software/backend/ruby-on-rails/rails-process-and-thread)
+- [Deployment engineering for Puma](https://github.com/puma/puma/blob/master/docs/deployment.md)
+- [Nginx configuration example file](https://github.com/puma/puma/blob/master/docs/nginx.md)
