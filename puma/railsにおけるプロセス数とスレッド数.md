@@ -39,7 +39,7 @@
 - ちなみにMRIの場合はIOだけ並列化可能。これはだいたい総時間の10~25%程度らしい
 
 ## tips
-- MRIのGILによりRubyのコードを一度に実行できるのは1スレッドだけ
+- MRIは[GIL](https://ja.wikipedia.org/wiki/%E3%82%B0%E3%83%AD%E3%83%BC%E3%83%90%E3%83%AB%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%97%E3%83%AA%E3%82%BF%E3%83%AD%E3%83%83%E3%82%AF)（Global VM Lockとも言う）によって1プロセスの中で同時に動作するスレッドは1スレッドのみに制限されるが、スレッド内でのIO待ち(DB,ファイル等)の間に別スレッドでリクエスト処理できるので、そこそこ効果はある
 ## 資料
 - [Railsのアプリケーションサーバーのプロセス数とスレッド数の設定方法](https://tech-book.precena.co.jp/software/backend/ruby-on-rails/rails-process-and-thread)
 - [Deployment engineering for Puma](https://github.com/puma/puma/blob/master/docs/deployment.md)
