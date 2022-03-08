@@ -58,3 +58,4 @@ http {
 
 ## 良い感じの資料
 - [ApacheとNginxの違い](https://openstandia.jp/pdf/140228_osc_seminar_ssof8.pdf)
+- [Nginx設定のまとめ](https://qiita.com/townsoft/items/3e2d410bbe65a364b603#sendfile)
