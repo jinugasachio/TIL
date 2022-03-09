@@ -1,4 +1,6 @@
 # 雑多メモ
+- `DATABASE_URL` は `adapter://USERNAME:PASSWORD@DATABASE_HOST/DATABASE_NAME`
+  - `postgres://postgres:password@database-1.cluster-cec8njvb1yxj.ap-northeast-1.rds.amazonaws.com:5432/sandbox_rails_production`
 
 - ポート8080番は代替HTTPポートと呼ばれ、大抵のプロキシサーバは8080番でサービスを待ち受けている
 
