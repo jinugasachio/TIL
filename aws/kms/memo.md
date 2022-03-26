@@ -6,3 +6,6 @@
 
 - IAMポリシーでも権限を制御できるようにするため
   - root ユーザーに権限を与えるとそのキーへの IAM policy が有効になる
+
+## 資料
+- [KMS ベストプラクティス](https://d1.awsstatic.com/whitepapers/ja_JP/aws-kms-best-practices.pdf)
