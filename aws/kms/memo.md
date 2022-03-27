@@ -7,5 +7,17 @@
 - IAMポリシーでも権限を制御できるようにするため
   - root ユーザーに権限を与えるとそのキーへの IAM policy が有効になる
 
+- ```json
+    {
+        "Sid": "Enable IAM policies",
+        "Effect": "Allow",
+        "Principal": {
+            "AWS": "arn:aws:iam::111111111111:root"
+        },
+        "Action": "kms:*",
+        "Resource": "*"
+    }
+  ```
+
 ## 資料
 - [KMS ベストプラクティス](https://d1.awsstatic.com/whitepapers/ja_JP/aws-kms-best-practices.pdf)
