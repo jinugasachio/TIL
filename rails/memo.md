@@ -31,5 +31,9 @@
 
 - `bundle install -j4` で4並列でのbundle installが実行される from [参考](https://qiita.com/camelmasa/items/5ca27ab398f105f86c76)
 
+- `gem update --system` は RubyGems(gemコマンド)自体のバージョンアップをする
+
+- `gem update` はインストールされている各gemのバージョンアップをする
+
 ## 良い感じの資料
 - [Rails開発におけるwebサーバーとアプリケーションサーバーの違い](https://qiita.com/jnchito/items/3884f9a2ccc057f8f3a3)
