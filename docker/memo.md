@@ -2,6 +2,14 @@
 ## 公式ドキュメント
 - [docker docs](https://matsuand.github.io/docs.docker.jp.onthefly/)
 
+## メモ
+- `STOPSIGNAL`
+  - `docker stop` を実行した際にコンテナプロセスに送信されるシグナルを指定する
+    - デフォルトは `SIGTERM`
+  - ```Dockerfile
+    STOPSIGNAL SIGINT # SIGTERM の代わりに SIGINT が送られる
+    ``` 
+
 ## ベストプラクティス
 - 不要な特権を避ける
   - コンテナを root で実行しないようにする
