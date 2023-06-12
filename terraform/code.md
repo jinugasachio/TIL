@@ -1,6 +1,6 @@
 # 書き方
 
-- `dynamic` の中で `for_each` を使う
+### `dynamic` の中で `for_each` を使う
 ```hcl
 locals {
   tags = {
@@ -38,7 +38,7 @@ resource "example" "example" {
 }
 ```
 
-- 特定の属性の値をもつ `map` のみ `for_each` で回す
+### 特定の属性の値をもつオブジェクトのみ `for_each` で回す
 ```hcl
 locals {
   slos = {
