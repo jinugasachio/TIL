@@ -59,7 +59,7 @@ locals {
 
 resource "datadog_service_level_objective" "default" {
   # slo_2 がフィルタリングされる
-  for_each = { for slo_name, attributes in var.slos : slo_name => attributes if attributes.type == "monitor" }
+  for_each = { for key, attributes in var.slos : key => attributes if attributes.type == "monitor" }
   
   name = each.value.name
 }
