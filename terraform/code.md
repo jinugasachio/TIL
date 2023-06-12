@@ -82,6 +82,34 @@ resource "docker_container" "this" {
 }
 ```
 
+### ブロックの生成を `dynamic` と `for_each` で制御する
+```hcl
+  # can を使うパターン
+  dynamic "example" {
+    # each.value.example が何かしらの値を返せば、trueに評価され [1] が返り exmple ブロックが生成される
+    for_each = can(each.value.example) ? [1] : []
+
+    content {
+      action {
+        type  = each.value.example.action.type
+        class = each.value.example.action.class
+      }
+    }
+  }
+  
+  # == で評価するパターン
+  dynamic "example" {
+    for_each = each.value.example_create == true ? [1] : []
+
+    content {
+      action {
+        type  = each.value.example.action.type
+        class = each.value.example.action.class
+      }
+    }
+  }
+```
+
 # TIPS
 - `lookup` は古いので `try` を使うようにする（[参考](https://discuss.hashicorp.com/t/try-vs-lookup-preference/47939/2)）
 
