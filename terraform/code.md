@@ -58,7 +58,7 @@ locals {
 }
 
 resource "datadog_service_level_objective" "default" {
-  # slo_2 のみをフィルタリングして回す
+  # slo_2 がフィルタリングされる
   for_each = { for slo_name, attributes in var.slos : slo_name => attributes if attributes.type == "monitor" }
   
   name = each.value.name
