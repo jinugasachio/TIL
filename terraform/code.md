@@ -37,3 +37,30 @@ resource "example" "example" {
   }
 }
 ```
+
+- 特定の属性の値をもつ `map` のみ `for_each` で回す
+```hcl
+locals {
+  slos = {
+    slo_1 = {
+      type = "metric"
+      name = "slo_1"
+    }
+    slo_2 = {
+      type = "monitor"
+      name = "slo_2"
+    }
+    slo_3 = {
+      type = "metric"
+      name = "slo_3"
+    }
+  }
+}
+
+resource "datadog_service_level_objective" "default" {
+  # slo_2 のみをフィルタリングして回す
+  for_each = { for slo_name, attributes in var.slos : slo_name => attributes if attributes.type == "monitor" }
+  
+  name = each.value.name
+}
+```
