@@ -55,6 +55,8 @@ http {
   - デフォルトで `/usr/local/etc/nginx/nginx.conf` を参照するので注意
   - 参照先を変えたい場合は、`nginx -t -c /path/to/nginx.conf`
 
-
+## TIPS
+- `if` を `location` ディレクティブで使ってはいけない（[参考](https://www.deep-rain.com/programming/infrastructure/953#i-4)）
 ## 良い感じの資料
 - [ApacheとNginxの違い](https://openstandia.jp/pdf/140228_osc_seminar_ssof8.pdf)
+- [Nginx設定のまとめ](https://qiita.com/townsoft/items/3e2d410bbe65a364b603#sendfile)
