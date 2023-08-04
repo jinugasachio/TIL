@@ -94,6 +94,8 @@ from  [Dockerfileのベストプラクティス Top 20](https://sysdig.jp/blog/d
 - [dockerdot](https://github.com/po3rin/dockerdot)
   - レイヤーの依存関係がわかる 
 - [Docker 17.09 からADD/COPY --chownでファイルのオーナーを変更できるようになった](https://qiita.com/minamijoyo/items/c599e81f8803e690f3e1)
+- [Dive](https://github.com/wagoodman/dive/tree/main)
+  - Dockerイメージ、レイヤーコンテンツを探索し、Docker/OCIイメージのサイズを縮小する方法を発見するためのツール。
 
 ## 資料
 - ![スクリーンショット 2022-03-30 11 43 25](https://user-images.githubusercontent.com/49634472/160743805-a9696032-5f6c-4b33-9616-aefcc015543d.png)
