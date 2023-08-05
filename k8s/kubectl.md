@@ -1,25 +1,33 @@
-#### version の確認
-```shell
-$ kubectl version --output=yaml
-clientVersion:
-  buildDate: "2023-05-17T14:20:07Z"
-  compiler: gc
-  gitCommit: 7f6f68fdabc4df88cfea2dcf9a19b2b830f1e647
-  gitTreeState: clean
-  gitVersion: v1.27.2
-  goVersion: go1.20.4
-  major: "1"
-  minor: "27"
-  platform: darwin/amd64
-kustomizeVersion: v5.0.1
-serverVersion:
-  buildDate: "2023-05-17T14:13:28Z"
-  compiler: gc
-  gitCommit: 7f6f68fdabc4df88cfea2dcf9a19b2b830f1e647
-  gitTreeState: clean
-  gitVersion: v1.27.2
-  goVersion: go1.20.4
-  major: "1"
-  minor: "27"
-  platform: linux/amd64
+#### deployment に紐づく pod の再起動
 ```
+kubectl rollout restart deploy deployment名
+```
+
+#### 複数のマニフェストファイルの適用
+```
+# dir 配下を適用
+kubectl apply -f ./dir
+
+# dir 配下を再起的に適用
+kubectl apply -f ./dir -R
+```
+
+#### マニフェストの適用（削除されたリソースも検知して削除）
+```
+kubectl apply --prune
+```
+
+#### クラスタの登録情報とマニフェストの差分を確認
+```
+kubectl diff -f sample-pod.yaml
+```
+
+#### リソース種別の一覧取得
+```
+# Namespace レベルのリソース
+kubectl api-resources --namespaced=true
+
+# Cluster レベルのリソース
+kubectl api-resources --namespaced=false
+```
+
