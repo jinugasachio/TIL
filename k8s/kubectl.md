@@ -51,3 +51,12 @@ kubectl logs sample-pod -c nginx-container
 # follow してリアルタイムに確認
 kubectl logs -f sample-pod 
 ```
+
+#### ロールバック
+```
+# リビジョンを指定してロールバック
+kubectl rollout undo deploy sample-deployment --to-revision 1
+
+# 1つ前にロールバック
+kubectl rollout undo deploy sample-deployment
+```
