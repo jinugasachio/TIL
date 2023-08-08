@@ -10,6 +10,9 @@
 - デプロイ先に依存する設定値だけを定義しそれをもとに同じマニフェストファイルでデプロイできる仕組みが熱望されていた
 - それを解決するのがHelmである
 
+## アーキテクチャ
+- Helm クライアントは Helm リポジトリからダウンロードした Charts と Values の組み合わせを Release として管理し Secret として保存している
+
 ```
 helm（chartを管理） → chart（manifest fileのテンプレートの集合）→ manifest file（k8sリソースを管理）→ k8s
 ```
@@ -51,6 +54,9 @@ helm（chartを管理） → chart（manifest fileのテンプレートの集合
   - チャートをマニフェストファイルとして出力してくれる
 - `helm get manifest`
   - k8sのサーバーに既にインストール済みかどうかわかる
+- `helm test`
+  - chart が適切に動作しているか確認できる
+
 
 ## helm-secrets
 - helm-secretsはhelmで[Secrets](https://kubernetes.io/docs/concepts/configuration/secret/)を扱いやすくするためのwrapper
